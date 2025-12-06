@@ -1,0 +1,52 @@
+version: 1
+
+# How often mitmproxy should re-fetch this YAML (in seconds)
+config_source:
+  refresh_seconds: 60
+
+rules:
+  ######################################################################
+  # 1. Block videos inside Google Docs
+  ######################################################################
+  # When true, the addon will inspect requests with a Referer matching
+  # docs.google.com/document/... and block URLs containing any of the
+  # substrings listed below.
+  block_google_docs_videos: true
+
+  # Google uses multiple backends for video embeds inside Docs:
+  # - googlevideo.com (YouTube / streaming)
+  # - youtube.com / ytimg.com (YouTube embeds)
+  # - video-downloads.googleusercontent.com (Drive video)
+  # - lh3.googleusercontent.com (Drive preview frames)
+  # You can add/remove patterns freely.
+  google_docs_video_url_patterns:
+    - "googlevideo.com"
+    - "youtube.com"
+    - "ytimg.com"
+    - "video-downloads.googleusercontent.com"
+    - "lh3.googleusercontent.com"
+
+
+  ######################################################################
+  # 2. Block downloads bigger than X MB
+  ######################################################################
+  # Applies to *non-HTML* responses only.
+  # Anything that is not "text/html" will be treated as a download candidate.
+  # If Content-Length > max_download_size_mb OR if the body exceeds it, block.
+  ######################################################################
+  max_download_size_mb: 10      # <-- Example: block > 10 MB downloads
+
+
+  ######################################################################
+  # 3. Block inline JavaScript containing specified strings
+  ######################################################################
+  # If the HTML page contains ANY inline <script> tag (no src=) whose text
+  # includes ANY of the below strings, the entire page is blocked with HTTP 403.
+  #
+  # Add as many detection strings as you want.
+  ######################################################################
+  inline_js_block_strings:
+    - "eval("
+    - "new Function("
+    - "document.write("
+    - "SOME_SIGNATURE_YOU_WANT_TO_BLOCK"

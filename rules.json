@@ -8,7 +8,8 @@
         "youtube.com",
         "youtube-nocookie.com",
         "googlevideo.com",
-        "ytimg.com"
+        "ytimg.com",
+        "youtubeeducation.com"
       ],
       "when_referer_contains": [
         "slides.google.com"
@@ -20,7 +21,9 @@
       "target_domains": [
         "youtube.com",
         "youtube-nocookie.com",
-        "googlevideo.com"
+        "googlevideo.com",
+        "ytimg.com",
+        "youtubeeducation.com"
       ],
       "when_referer_contains": [
         "docs.google.com"
@@ -29,7 +32,7 @@
     }
   ],
 
-  "blocked_url_patterns": [],
+  "blocked_url_patterns": ["eaglercraft", "minecraft"],
 
   "max_download_bytes": 10485760,
 

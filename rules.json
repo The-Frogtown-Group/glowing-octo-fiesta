@@ -32,7 +32,14 @@
     }
   ],
 
-  "blocked_url_patterns": ["eaglercraft", "minecraft"],
+  "blocked_url_patterns": [
+    "eaglercraft", 
+    "minecraft",
+    "nyt.com/video-static",
+    "gstatic.com/video",
+    "facebook",
+    "instagram"
+  ],
 
   "max_download_bytes": 10485760,
 

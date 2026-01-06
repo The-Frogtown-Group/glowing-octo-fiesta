@@ -32,7 +32,7 @@
     }
   ],
 
-  "blocked_url_patterns": ["eaglercraft", "minecraft"],
+  "blocked_url_patterns": ["eaglercraft", "minecraft", "git"],
 
   "max_download_bytes": 10485760,
 

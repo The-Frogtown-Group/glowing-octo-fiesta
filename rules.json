@@ -38,15 +38,13 @@
 
   "blocked_content_types": [],
 
-  "blocked_extensions": ["git", "app"],
+  "blocked_extensions": ["git"],
 
   "blocked_js_keywords": [
     "cryptonight",
     "coinhive",
     "crypto-loot",
     "eaglercraft",
-    "minecraft",
-    "game",
-    "meme"
+    "minecraft"
   ]
 }

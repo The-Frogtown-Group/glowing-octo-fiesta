@@ -81,6 +81,14 @@
     "coinhive",
     "crypto-loot",
     "eaglercraft",
-    "minecraft"
+    "minecraft",
+    "doom",
+    "wolfenstein"
+  ],
+  "blocked_user_agents": [
+    "^curl/",
+    "^Wget/",
+    "^python-requests/"
   ]
+  
 }

@@ -68,7 +68,7 @@
     }
   ],
 
-  "blocked_url_patterns": ["eaglercraft", "minecraft","doom","wolfenstein"],
+  "blocked_url_patterns": ["^eaglercraft", "^minecraft","^doom","^wolfenstein"],
 
   "max_download_bytes": 10485760,
 

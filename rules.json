@@ -35,7 +35,19 @@
     "*.push.apple.com",
     "*.appattest.apple.com"
   ],
-  "blocked_domains": [],
+  
+  "blocked_domains": [
+    "crazygames.com",
+    "iogames.space",
+    "iogames.live",
+    "iogames.network",
+    "y8.com",
+    "miniclip.com",
+    "itch.io",
+    "classroom6x.com",
+    "classroom6.org",
+    "classroom6.co"
+  ],
 
   "context_rules": [
     {
@@ -65,21 +77,49 @@
         "docs.google.com"
       ],
       "message": "Videos are not allowed in docs"
+    },
+    {
+      "name": "Games in Google Sites",
+      "target_domains": ["sites.google.com"],
+      "when_referer_contains": ["games", "unblocked", "classroom6"],
+      "message": "Games are blocked"
     }
+
   ],
 
-  "blocked_url_patterns": ["^eaglercraft", "^minecraft","^doom","^wolfenstein"],
+  "blocked_url_patterns": [
+    "beaglercraft",
+    "minecraft",
+    "doom",
+    "wolfenstein",
+    "unblocked", "games", "classroom6", "sites.google.com/view"
+  ],
+
 
   "max_download_bytes": 10485760,
 
-  "blocked_content_types": [],
+  "blocked_content_types": ["websocket"],
 
-  "blocked_extensions": [],
+  "blocked_extensions": [
+    ".wasm",
+    ".unityweb",
+    ".data",
+    ".bundle",
+    ".pak",
+    ".ogg",
+    ".zip",
+    ".rar"
+  ],
 
   "blocked_js_keywords": [
-    "cryptonight",
-    "coinhive",
-    "crypto-loot",
+    "unity",
+    "webgl",
+    "phaser",
+    "kabam",
+    "godot",
+    "gamedistribution",
+    "crazygames",
+    "classroom6",
     "eaglercraft",
     "minecraft",
     "doom",

@@ -33,7 +33,8 @@
     "valid.apple.com",
     "certs.apple.com",
     "*.push.apple.com",
-    "*.appattest.apple.com"
+    "*.appattest.apple.com",
+    "*.collegeboard.org"
   ],
   
   "blocked_domains": [ "crazygames.com", "iogames.space", "iogames.live", "iogames.network", "y8.com", "miniclip.com", "itch.io", "classroom6x.com", "classroom6.org", "classroom6.co", "gamedistribution.com", "krunker.io", "slither.io", "agar.io" ],

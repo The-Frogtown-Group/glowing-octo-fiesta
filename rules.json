@@ -79,7 +79,7 @@
 
   ],
 
-  "blocked_url_patterns": [ "eaglercraft", "minecraft", "unblockedgames", "unblocked-games", "classroom6", "iogames", "crazygames", "gamedistribution", "krunker", "slither", "agar", "unity", "webgl", "phaser", "godot", "kabam", "wolfenstein" ],
+  "blocked_url_patterns": [ "eaglercraft", "minecraft", "unblockedgames", "unblocked-games", "classroom6", "iogames", "crazygames", "gamedistribution", "krunker", "slither", "agar", "unity", "webgl", "phaser", "godot", "kabam", "wolfenstein", "udm=50" ],
 
 
   "max_download_bytes": 50485760,

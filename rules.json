@@ -37,7 +37,8 @@
     "*.collegeboard.org",
     "*.learnosity.com",
     "*.split.io",
-    "*.bfwpub.com"
+    "*.bfwpub.com",
+    "*.saplinglearning.com"
   ],
   
   "blocked_domains": [ "crazygames.com", "iogames.space", "iogames.live", "iogames.network", "y8.com", "miniclip.com", "itch.io", "classroom6x.com", "classroom6.org", "classroom6.co", "gamedistribution.com", "krunker.io", "slither.io", "agar.io" ],

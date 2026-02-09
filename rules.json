@@ -91,7 +91,7 @@
   "blocked_extensions": [
   ],
 
-  "blocked_js_keywords": [
+  "blocked_js_keywords_": [
     "gamedistribution",
     "crazygames",
     "classroom6",

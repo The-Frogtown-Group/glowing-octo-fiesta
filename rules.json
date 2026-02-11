@@ -72,6 +72,20 @@
       ],
       "message": "Videos are not allowed in docs"
     },
+     {
+      "name": "YouTube in Google Sites",
+      "target_domains": [
+        "youtube.com",
+        "youtube-nocookie.com",
+        "googlevideo.com",
+        "ytimg.com",
+        "youtubeeducation.com"
+      ],
+      "when_referer_contains": [
+        "sites.google.com"
+      ],
+      "message": "Videos are not allowed in docs"
+    },
     {
       "name": "Games in Google Sites",
       "target_domains": ["sites.google.com"],

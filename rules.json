@@ -57,7 +57,8 @@
     "slither.io", 
     "agar.io",
     "video.twitch.tv",
-    "vod.twitch.tv"
+    "vod.twitch.tv",
+    "supremacy1914.com"
     
   ],
 
@@ -155,7 +156,8 @@
     "manifest\\.mpd",
     "/videoplayback",
     "video\\.twitch\\.tv",
-    "vod\\.cdn\\.twitch\\.tv"
+    "vod\\.cdn\\.twitch\\.tv",
+    "supremacy1914"
   ],
 
 
@@ -188,7 +190,8 @@
     "minecraft",
     "doom",
     "wolfenstein",
-    "callofwar"
+    "callofwar",
+    "supremacy"
   ],
   "blocked_user_agents": [
     "^curl/",

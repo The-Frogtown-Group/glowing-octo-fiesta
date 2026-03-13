@@ -41,7 +41,25 @@
     "*.saplinglearning.com"
   ],
   
-  "blocked_domains": [ "crazygames.com", "iogames.space", "iogames.live", "iogames.network", "y8.com", "miniclip.com", "itch.io", "classroom6x.com", "classroom6.org", "classroom6.co", "gamedistribution.com", "krunker.io", "slither.io", "agar.io" ],
+  "blocked_domains": [ 
+    "crazygames.com", 
+    "iogames.space", 
+    "iogames.live", 
+    "iogames.network", 
+    "y8.com", 
+    "miniclip.com", 
+    "itch.io", 
+    "classroom6x.com", 
+    "classroom6.org", 
+    "classroom6.co", 
+    "gamedistribution.com", 
+    "krunker.io", 
+    "slither.io", 
+    "agar.io",
+    "video.twitch.tv",
+    "vod.twitch.tv"
+    
+  ],
 
   "context_rules": [
     {
@@ -91,21 +109,78 @@
       "target_domains": ["sites.google.com"],
       "when_referer_contains": ["games", "unblocked", "classroom6"],
       "message": "Games are blocked"
-    }
+    },
+    {
+    "name": "YouTube everywhere",
+    "target_domains": [
+      "youtube.com",
+      "youtube-nocookie.com",
+      "googlevideo.com",
+      "ytimg.com"
+    ],
+    "when_referer_contains": [],
+      "unless_referer_contains": ["meet.google.com"],
+    "message": "Video streaming is blocked"
+  }
 
   ],
 
-  "blocked_url_patterns": [ "eaglercraft", "now.gg", "minecraft", "callofwar", "unblockedgames", "unblocked-games", "classroom6", "iogames", "crazygames", "gamedistribution", "krunker", "slither", "agar", "unity", "webgl", "phaser", "godot", "kabam", "wolfenstein", "udm=50" ],
+  "blocked_url_patterns": [ 
+    "eaglercraft", 
+    "now.gg", 
+    "minecraft", 
+    "callofwar", 
+    "unblockedgames", 
+    "unblocked-games", 
+    "classroom6", 
+    "iogames", 
+    "crazygames", 
+    "gamedistribution", 
+    "krunker", 
+    "slither", 
+    "agar", 
+    "unity", 
+    "webgl", 
+    "phaser", 
+    "godot", 
+    "kabam", 
+    "wolfenstein", 
+    "udm=50",
+    "\\.mp4(\\?|$)",
+    "\\.m3u8(\\?|$)",
+    "\\.ts(\\?|$)",
+    "\\.mkv(\\?|$)",
+    "\\.avi(\\?|$)",
+    "\\.mov(\\?|$)",
+    "manifest\\.mpd",
+    "/videoplayback",
+    "video\\.twitch\\.tv",
+    "vod\\.cdn\\.twitch\\.tv"
+  ],
 
 
-  "max_download_bytes": 50485760,
+  "max_download_bytes": 5485760,
 
-  "blocked_content_types": [],
+  "blocked_content_types": [
+    "video/mp4",
+    "video/webm",
+    "video/ogg",
+    "video/x-matroska",
+    "application/x-mpegURL",
+    "application/vnd.apple.mpegurl",
+    "application/dash+xml"
+  ],
 
   "blocked_extensions": [
+    ".mp4",
+    ".mkv",
+    ".avi",
+    ".mov",
+    ".m3u8",
+    ".webm"
   ],
 
-  "blocked_js_keywords_": [
+  "blocked_js_keywords": [
     "gamedistribution",
     "crazygames",
     "classroom6",

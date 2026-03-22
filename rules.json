@@ -164,7 +164,7 @@
   ],
 
 
-  "max_download_bytes": 5485760,
+  "max_download_bytes": 54857600,
 
   "blocked_content_types": [
     "video/mp4",

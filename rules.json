@@ -38,7 +38,8 @@
     "*.learnosity.com",
     "*.split.io",
     "*.bfwpub.com",
-    "*.saplinglearning.com"
+    "*.saplinglearning.com",
+    "chat.google.com"
   ],
   
   "blocked_domains": [ 

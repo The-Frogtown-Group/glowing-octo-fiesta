@@ -197,8 +197,7 @@
   ],
   "blocked_user_agents": [
     "^curl/",
-    "^Wget/",
-    "^python-requests/"
+    "^Wget/"
   ]
   
 }
